@@ -4,7 +4,6 @@ typealias ENV = "dev"|"int"|"uat"|"prd"
 
 class Deployment {
     name: String
-    env: ENV
 }
 
 outputs: Listing<Deployment>

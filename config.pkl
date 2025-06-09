@@ -1,11 +1,14 @@
 amends "schema.pkl"
 outputs {
   new {
-    name = "test"
-    env = "dev"
-  }
-  new {
     name = "test2"
-    env = "uat"
+    ["dev"] {
+      lifespan = 1
+      diet = "Seeds"
+    }
+    ["prd"] {
+      lifespan = 8
+      diet = "Nuts"
+    }
   }
 }
