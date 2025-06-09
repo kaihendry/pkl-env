@@ -1,6 +1,28 @@
-amends "schema.pkl"
+// amends "schema.pkl"
+
 outputs {
-  ["dev"] { name = "Dev deployment" }
-  ["prd"] { name = "Prod deployment" }
-  ["uat"] { name = "User Acceptance Testing deployment" }
+  new {
+    name = "Foo deployment"
+    ["dev"] {
+      bucketName = "foo-dev"
+    }
+    ["prd"] {
+      bucketName = "foo-prd"
+    }
+    ["uat"] {
+      bucketName = "foo-uat"
+    }
+  }
+   new {
+    name = "Bar deployment"
+    ["dev"] {
+      bucketName = "bar-dev"
+    }
+    ["prd"] {
+      bucketName = "bar-prd"
+    }
+    ["uat"] {
+      bucketName = "bar-uat"
+    }
+  }
 }

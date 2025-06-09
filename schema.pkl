@@ -2,8 +2,13 @@ open module demo
 
 typealias ENV = "dev"|"int"|"uat"|"prd"
 
-class Deployment {
+class OutputPort {
     name: String
+    Mapping<ENV, Deployment>
 }
 
-outputs: Mapping<ENV, Deployment>
+class Deployment {
+    bucketName: String
+}
+
+outputs: Listing<OutputPort>
