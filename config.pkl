@@ -1,14 +1,6 @@
 amends "schema.pkl"
 outputs {
-  new {
-    name = "test2"
-    ["dev"] {
-      lifespan = 1
-      diet = "Seeds"
-    }
-    ["prd"] {
-      lifespan = 8
-      diet = "Nuts"
-    }
-  }
+  ["dev"] { name = "Dev deployment" }
+  ["prd"] { name = "Prod deployment" }
+  ["uat"] { name = "User Acceptance Testing deployment" }
 }

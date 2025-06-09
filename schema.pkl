@@ -6,5 +6,4 @@ class Deployment {
     name: String
 }
 
-outputs: Listing<Deployment>
-
+outputs: Mapping<ENV, Deployment>
