@@ -2,9 +2,10 @@ open module demo
 
 typealias ENV = "dev"|"int"|"uat"|"prd"
 
-outputs: Listing<output>
-
-class output {
+class Deployment {
     name: String
     env: ENV
 }
+
+outputs: Listing<Deployment>
+
