@@ -1,0 +1,11 @@
+amends "schema.pkl"
+outputs {
+  new {
+    name = "test"
+    env = "dev"
+  }
+  new {
+    name = "test2"
+    env = "uat"
+  }
+}

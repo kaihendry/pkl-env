@@ -1,0 +1,10 @@
+open module demo
+
+typealias ENV = "dev"|"int"|"uat"|"prd"
+
+outputs: Listing<output>
+
+class output {
+    name: String
+    env: ENV
+}
